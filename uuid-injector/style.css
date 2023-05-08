@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* outline: 1px solid red; */
+}
+
+body {
+  padding: 12px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+section {
+  max-width: 916px;
+  margin: 1rem auto;
+}
+
+section.info {
+  border: 2px solid gray;
+  border-radius: 8px;
+  padding: 1.2rem;
+}
+
+section.info .container {
+  max-height: 26rem;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 100%;
+}
+
+table * {
+  border: 1px solid black;
+  padding: 8px 12px;
+}
+
+table thead {
+  background-color: #1d2a35;
+  color: white;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: lightblue;
+}
+
+#query {
+  width: 100%;
+  height: 8rem;
+  padding: 8px;
+  font-family: monospace;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+form {
+  position: relative;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+form .title {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  padding: 4px 8px;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #7d7d7d;
+  color: white;
+  border-radius: 4px 4px 0 0;
+}
+
+.input-inline {
+  flex: 1 0 100px;
+  display: flex;
+  align-items: center;
+  background-color: #1d2a35;
+  color: white;
+}
+
+.input-inline label {
+  min-width: 80px;
+  text-align: center;
+  font-size: 12px;
+}
+
+form.action .input-inline label {
+  min-width: 8rem;
+}
+
+form.action button[name="inject"] {
+  left: 0;
+  background-color: #f2b11b;
+}
+
+.input-inline input {
+  flex: 1;
+  padding: 8px;
+  width: 100%;
+  background-color: #38444d;
+  color: white;
+  border: none;
+}
+
+.input-inline input:focus {
+  outline: 1px solid #76d66f;
+  outline-offset: -2px;
+}
+
+form button {
+  position: absolute;
+  top: calc(100% + 1rem);
+  padding: 4px 8px;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+form.init button[name="init"] {
+  left: 0;
+  background-color: green;
+}
+
+form.init button[name="reset"] {
+  left: 5.6rem;
+  background-color: red;
+}
